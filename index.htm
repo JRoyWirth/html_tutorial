@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>My first HTML</title>
+    <meta charset="UTF-8">
+<style>
+h2 {
+	color: blue;
+    font-family: arial;
+    font-size:100%;
+    border: 1px solid red;
+    padding: 5px;
+    margin: 10px;
+    }
+h3 {
+	color: green;
+    font-family: Times New Roman;
+    font-size: 200%;
+    }
+p	{
+	color: black;
+    font-family: veranda;
+    font-size: 100%;
+    }
+#p01 {
+	font-size: 125%;
+    }
+p.red_out {
+	color:red;
+    }
+    
+table, th, td {
+	border: 1px solid black;
+    border-collapse:collapse;
+    padding: 15px;
+    }
+th {
+	text-align: left;
+    }
+tbale#t01 {
+	width: 100%;
+    background-color: #f1f1c1;
+    }
+table#t01 tr:nth-child(even) {
+	background-color: #eee;
+    }
+table#t01 tr:nth-child(odd) {
+	background-color: #fff;
+    }
+table#t01 th {
+	color: white;
+    background-color: black;
+    }
+    
+</style>
+</head>
+
+
+
+
+<body style="background-color:powderblue;">
+
+
+<br>
+
+
+<!-- Description Lists -->
+<dl>
+	<dt>Bears</dt>
+    <dd>- a football team</dd>
+    <dt>Cubs</dt>
+    <dd>- a baseball team</dd>
+</dl>
+
+<!-- Nested Lists -->
+<ul>
+	<li>Beer</li>
+    <li>Bourbon</li>
+    	<ol type="a">
+        	<li>Makers Mark</li>
+        	<li>Woodford Reserve</li>
+        </ol>
+     <li>Tea</li>
+</ul>
+
+<br>
+<hr>
+<br>
+
+
+<h1 style="text-align:center;">My First "Center-aligned" Heading</h1>
+<h2>Heading #2 Blue Arial</h2>
+<h3>Heading #3 200% Times Green</h3>
+<h4>Heading #4</h4>
+<h5>Heading #5</h5>
+<h6>Heading #6</h6>
+
+<!-- Creating a table -->
+<table style="width=100%">
+<!-- defines the row of the table with headers -->
+    <caption>list of recipes</caption>
+    <tr>
+<!-- the first title spans two columns -->
+        <th colspan="2">Course</th>
+        <th>Origin</th>
+    </tr>
+<!-- each section below defines each row in the table with table data -->
+    <tr>
+    	<td>Entree</td>
+        <td>Meatballs</td>
+        <td>Italy</td>
+    </tr>
+    <tr>
+    	<td>Dessert</td>
+        <td>Cheesecake</td>
+        <td>Greece</td>
+    </tr>
+    <tr>
+    	<td>Side</td>
+        <td>Mac and Cheese</td>
+        <td>England</td>
+    </tr>
+
+<!-- Creating a table using an id for formatting-->
+<table id="t01">
+<!-- defines the row of the table with headers -->
+    <tr>
+<!-- the first title spans two columns -->
+        <th>Course</th>
+        <th>Dish</th>
+        <th>Origin</th>
+    </tr>
+<!-- each section below defines each row in the table with table data -->
+    <tr>
+    	<td>Entree</td>
+        <td>Meatballs</td>
+        <td>Italy</td>
+    </tr>
+    <tr>
+    	<td>Dessert</td>
+        <td>Cheesecake</td>
+        <td>Greece</td>
+    </tr>
+    <tr>
+    	<td>Side</td>
+        <td>Mac and Cheese</td>
+        <td>England</td>
+    </tr>
+
+<br>
+<hr>
+
+<!-- Unordered List -->
+<h4> To do list: </h4>
+<ul style="list-style-type:square;">
+	<li>Breakfast</li>
+    <li>Coffee</li>
+    <li>Lunch</li>
+    <li>Dinner</li>
+    <li>Dessert</li>
+</ul>
+
+<!-- Ordered List using numerals -->
+<h4> The best drinks </h4>
+<ol type="I">
+	<li>Beer</li>
+    <li>Bourbon</li>
+    <li>Coffee</li>
+    <li>Wine</li>
+    <li>Water</li>
+</ol>
+
+<br>
+<hr>
+<br>
+
+
+<p title="I'm a tooltip">My <b>first</b> paragraph!</p>
+
+<p>This <mark>is</mark> <i>another</i> paragraph</p>
+
+<a href="https://google.com">This is a <strong>link</strong> to Google</a>
+
+<br>
+
+<p>In the previous <small>chapter</small>, you <del>learned</del> about the HTML style attribute.
+HTML also defines special elements for <ins>defining</ins> text with a <sub>sp</sp>ecial mean<sup>ing</sup>.<br><br>
+HTML uses elements like b and i for formatting output, like bold or italic text.
+Formatting elements were designed to display special types of text:<p/>
+<br>
+
+<p class="red_out">Here is a quote from WWF's website:</p> <br><br>
+
+<p><q><i>For nearly <p id="p01">60 years</p>, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.</i></q></p>
+
+<hr>
+
+<p>Here is a quote from WWF's website: <br><br>
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.</blockquote></p>
+
+<br>
+
+<p>The <abbr title="Wolrd Health Org.">WHO</abbr> was founded in 1948.</p>
+
+<hr>
+
+<a href="https://www.w3schools.com">This is a link</a>
+
+<hr>
+
+<img src="img_girl.jpg" alt="Girl with a jacket" height="200" width="100">
+
+<pre>
+Roses are red
+    
+Violets are blue
+    
+    Sarah is sweet
+    
+    I love you!
+    
+</pre>
+
+<p style="color:red">This is a red paragraph.</p>
+
+<tagname style
+
+<address>
+Mr. President <br>
+1600 Pennsylvania Ave NW <br>
+Washington, DC 20500
+</address>
+
+<p>This website was build with guidance from <cite>W3Schools</cite>.</p>
+
+<bdo dir="rtl">This text will be written from right to left, like in hebrew.</bdo>
+
+<!-- link to an image example -->
+
+<a href="img_girl.jpg" target="_blank">Hi Ivy!</a>
+
+<br>
+
+<!-- two inserted images with a line break -->
+
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+
+<br>
+
+<img src="img_chania.jpg" alt="Flowers in Chania">
+
+<br>
+
+<!-- gif as a link example -->
+
+<a href="default.asp">
+	<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a>
+
+<br>
+
+<!-- embeded link example -->
+
+<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+
+<hr>
+
+<!-- GIF example -->
+
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+
+<br>
+
+<!-- using an image as a link -->
+<a href="default.asp">
+	<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a>
+
+<!-- floating image example -->
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;"> the image will float to the right of the text.</p>
+
+<p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"> the image will float to the left of text.</p>
+
+
+
+</body>
+</html>
