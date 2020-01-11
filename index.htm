@@ -51,10 +51,109 @@ table#t01 th {
 	color: white;
     background-color: black;
     }
-    
+.cities {
+	background-color:black;
+    color:white;
+    }  
 </style>
 </head>
 
+<!-- text input field -->
+<h5>Username</h5>
+<form action="/action_page.php">
+<input type="text" name="username">
+</form>
+
+<!--password and username -->
+<form>
+	User name:<br>
+    <input type="text" name="username"><br>
+    User password:<br>
+    <input type="password" name="psw">
+</form>
+
+<br>
+
+<!-- form for entering name & favorite food -->
+<form>
+<fieldset>
+<legend>Personal Information:</legend>
+First name:<br>
+    <input type="text" name="firstname"><br>
+    Last name:<br>
+    <input type="text" name="lastname"><br>
+    Favorite food:<br>
+    <input type="text" name="fav_food">
+
+<!-- list of the sections at Kellogg -->
+<h5>What section are you in</p>
+	<input type="radio" name="section" value="Buckets" checked>Buckets<br>
+    <input type="radio" name="section" value="Turkeys">Turkeys<br>
+    <input type="radio" name="section" value="Cash_Cows">Cash Cows<br>
+    <input type="radio" name="section" value="Poets">Poets<br>    
+    <input type="radio" name="section" value="Other">Other<br>
+</fieldset>
+
+<br>
+
+<!-- dropdown list -->
+<h5>What type of recipe are you submitting?</h5>
+<select name="meal">
+	<option value="breakfast">Breakfast</option>
+    <option value="lunch">Lunch</option>
+    <option value="snack">Snack</option>
+    <option value="dinner">Dinner</option>
+    <option value="beverage">Beverage</option>
+</select>
+
+<br>
+
+
+<!-- multiselect list -->
+<h5>What type of equipment is required? (select to pick multiple options</h5>
+<select name="equipment" size="3" multiple>
+	<option value="skillet">Skillet</option>
+    <option value="over">Oven</option>
+    <option value="stove">stovetop</option>
+    <option value="sousvide">Sous Vide / Precision Cooker</option>
+</select>
+
+<!-- freeform text field -->
+<h5>Recipe</h5>
+<textarea name="recipe" style="width:200px;height:200px">
+Type your recipe here.
+</textarea>
+
+<br>
+
+<!-- dropdown list -->
+<h5>Time to make</h5>
+<form action="/action_page.php">
+	<input list="time_to_make">
+    <datalist id="time_to_make">
+    	<option value="0-30 minutes">
+        <option value="30-60 minutes">
+        <option value=">60 minutes">
+    </datalist>
+</form>
+
+<br>
+
+<br><br>
+
+<input type="submit" value="submit">
+
+<br>
+
+<form action="/action_page.php" target="_blank" method="get">
+
+<hr>
+
+</form>
+
+
+<!-- destination for a jump within the webpage --> 
+<h4 id="First_Section">First Section</h2>
 
 
 
@@ -74,9 +173,10 @@ table#t01 th {
 
 <!-- Nested Lists -->
 <ul>
-	<li>Beer</li>
+	<li class="cities">Beer</li>
     <li>Bourbon</li>
-    	<ol type="a">
+		<!-- nested list with a start of the 30th letter -->
+        <ol type="a"; start="30">
         	<li>Makers Mark</li>
         	<li>Woodford Reserve</li>
         </ol>
@@ -112,7 +212,7 @@ table#t01 th {
     </tr>
     <tr>
     	<td>Dessert</td>
-        <td>Cheesecake</td>
+        <td class="cities">Cheesecake</td>
         <td>Greece</td>
     </tr>
     <tr>
@@ -282,7 +382,16 @@ Washington, DC 20500
 
 <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"> the image will float to the left of text.</p>
 
+<!-- location of a reference to jump within the webpage -->
+<a href="#First_Section">Jump to first section</a>
 
+<!-- example of an iframe, a webpage within a webpage -->
+<iframe src="demo_iframe.htm" style="height:200px;width:300pm;border:none"></iframe>
+
+<!-- iframe as a target for a link -->
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+
+<p><a href="https://wwww.w3schools.com" target="iframe_a">W3schools.com</a></p>
 
 </body>
 </html>
